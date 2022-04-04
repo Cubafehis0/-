@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5db27a3e4b59e884faf847edc10aecf6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - REEJIStar-LiLing-Gothic-GB
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3a10575ff0004af4b80112b868d54b9e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

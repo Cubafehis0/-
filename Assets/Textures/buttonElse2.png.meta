@@ -1,0 +1,2313 @@
+fileFormatVersion: 2
+guid: 4458401329a7ace4898e8b1bdbe32148
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: buttonElse2_0
+  - first:
+      213: 21300002
+    second: buttonElse2_1
+  - first:
+      213: 21300004
+    second: buttonElse2_2
+  - first:
+      213: 21300006
+    second: buttonElse2_3
+  - first:
+      213: 21300008
+    second: buttonElse2_4
+  - first:
+      213: 21300010
+    second: buttonElse2_5
+  - first:
+      213: 21300012
+    second: buttonElse2_6
+  - first:
+      213: 21300014
+    second: buttonElse2_7
+  - first:
+      213: 21300016
+    second: buttonElse2_8
+  - first:
+      213: 21300018
+    second: buttonElse2_9
+  - first:
+      213: 21300020
+    second: buttonElse2_10
+  - first:
+      213: 21300022
+    second: buttonElse2_11
+  - first:
+      213: 21300024
+    second: buttonElse2_12
+  - first:
+      213: 21300026
+    second: buttonElse2_13
+  - first:
+      213: 21300028
+    second: buttonElse2_14
+  - first:
+      213: 21300030
+    second: buttonElse2_15
+  - first:
+      213: 21300032
+    second: buttonElse2_16
+  - first:
+      213: 21300034
+    second: buttonElse2_17
+  - first:
+      213: 21300036
+    second: buttonElse2_18
+  - first:
+      213: 21300038
+    second: buttonElse2_19
+  - first:
+      213: 21300040
+    second: buttonElse2_20
+  - first:
+      213: 21300042
+    second: buttonElse2_21
+  - first:
+      213: 21300044
+    second: buttonElse2_22
+  - first:
+      213: 21300046
+    second: buttonElse2_23
+  - first:
+      213: 21300048
+    second: buttonElse2_24
+  - first:
+      213: 21300050
+    second: buttonElse2_25
+  - first:
+      213: 21300052
+    second: buttonElse2_26
+  - first:
+      213: 21300054
+    second: buttonElse2_27
+  - first:
+      213: 21300056
+    second: buttonElse2_28
+  - first:
+      213: 21300058
+    second: buttonElse2_29
+  - first:
+      213: 21300060
+    second: buttonElse2_30
+  - first:
+      213: 21300062
+    second: buttonElse2_31
+  - first:
+      213: 21300064
+    second: buttonElse2_32
+  - first:
+      213: 21300066
+    second: buttonElse2_33
+  - first:
+      213: 21300068
+    second: buttonElse2_34
+  - first:
+      213: 21300070
+    second: buttonElse2_35
+  - first:
+      213: 21300072
+    second: buttonElse2_36
+  - first:
+      213: 21300074
+    second: buttonElse2_37
+  - first:
+      213: 21300076
+    second: buttonElse2_38
+  - first:
+      213: 21300078
+    second: buttonElse2_39
+  - first:
+      213: 21300080
+    second: buttonElse2_40
+  - first:
+      213: 21300082
+    second: buttonElse2_41
+  - first:
+      213: 21300084
+    second: buttonElse2_42
+  - first:
+      213: 21300086
+    second: buttonElse2_43
+  - first:
+      213: 21300088
+    second: buttonElse2_44
+  - first:
+      213: 21300090
+    second: buttonElse2_45
+  - first:
+      213: 21300092
+    second: buttonElse2_46
+  - first:
+      213: 21300094
+    second: buttonElse2_47
+  - first:
+      213: 21300096
+    second: buttonElse2_48
+  - first:
+      213: 21300098
+    second: buttonElse2_49
+  - first:
+      213: 21300100
+    second: buttonElse2_50
+  - first:
+      213: 21300102
+    second: buttonElse2_51
+  - first:
+      213: 21300104
+    second: buttonElse2_52
+  - first:
+      213: 21300106
+    second: buttonElse2_53
+  - first:
+      213: 21300108
+    second: buttonElse2_54
+  - first:
+      213: 21300110
+    second: buttonElse2_55
+  - first:
+      213: 21300112
+    second: buttonElse2_56
+  - first:
+      213: 21300114
+    second: buttonElse2_57
+  - first:
+      213: 21300116
+    second: buttonElse2_58
+  - first:
+      213: 21300118
+    second: buttonElse2_59
+  - first:
+      213: 21300120
+    second: buttonElse2_60
+  - first:
+      213: 21300122
+    second: buttonElse2_61
+  - first:
+      213: 21300124
+    second: buttonElse2_62
+  - first:
+      213: 21300126
+    second: buttonElse2_63
+  - first:
+      213: 21300128
+    second: buttonElse2_64
+  - first:
+      213: 21300130
+    second: buttonElse2_65
+  - first:
+      213: 21300132
+    second: buttonElse2_66
+  - first:
+      213: 21300134
+    second: buttonElse2_67
+  - first:
+      213: 21300136
+    second: buttonElse2_68
+  - first:
+      213: 21300138
+    second: buttonElse2_69
+  - first:
+      213: 21300140
+    second: buttonElse2_70
+  - first:
+      213: 21300142
+    second: buttonElse2_71
+  - first:
+      213: 21300144
+    second: buttonElse2_72
+  - first:
+      213: 21300146
+    second: buttonElse2_73
+  - first:
+      213: 21300148
+    second: buttonElse2_74
+  - first:
+      213: 21300150
+    second: buttonElse2_75
+  - first:
+      213: 21300152
+    second: buttonElse2_76
+  - first:
+      213: 21300154
+    second: buttonElse2_77
+  - first:
+      213: 21300156
+    second: buttonElse2_78
+  - first:
+      213: 21300158
+    second: buttonElse2_79
+  - first:
+      213: 21300160
+    second: buttonElse2_80
+  - first:
+      213: 21300162
+    second: buttonElse2_81
+  - first:
+      213: 21300164
+    second: buttonElse2_82
+  - first:
+      213: 21300166
+    second: buttonElse2_83
+  - first:
+      213: 21300168
+    second: buttonElse2_84
+  - first:
+      213: 21300170
+    second: buttonElse2_85
+  - first:
+      213: 21300172
+    second: buttonElse2_86
+  - first:
+      213: 21300174
+    second: buttonElse2_87
+  - first:
+      213: 21300176
+    second: buttonElse2_88
+  - first:
+      213: 21300178
+    second: buttonElse2_89
+  - first:
+      213: 21300180
+    second: buttonElse2_90
+  - first:
+      213: 21300182
+    second: buttonElse2_91
+  - first:
+      213: 21300184
+    second: buttonElse2_92
+  - first:
+      213: 21300186
+    second: buttonElse2_93
+  - first:
+      213: 21300188
+    second: buttonElse2_94
+  - first:
+      213: 21300190
+    second: buttonElse2_95
+  - first:
+      213: 21300192
+    second: buttonElse2_96
+  - first:
+      213: 21300194
+    second: buttonElse2_97
+  - first:
+      213: 21300196
+    second: buttonElse2_98
+  - first:
+      213: 21300198
+    second: buttonElse2_99
+  - first:
+      213: 21300200
+    second: buttonElse2_100
+  - first:
+      213: 21300202
+    second: buttonElse2_101
+  - first:
+      213: 21300204
+    second: buttonElse2_102
+  - first:
+      213: 21300206
+    second: buttonElse2_103
+  - first:
+      213: 21300208
+    second: buttonElse2_104
+  - first:
+      213: 21300210
+    second: buttonElse2_105
+  - first:
+      213: 21300212
+    second: buttonElse2_106
+  - first:
+      213: 21300214
+    second: buttonElse2_107
+  - first:
+      213: 21300216
+    second: buttonElse2_108
+  - first:
+      213: 21300218
+    second: buttonElse2_109
+  - first:
+      213: 21300220
+    second: buttonElse2_110
+  - first:
+      213: 21300222
+    second: buttonElse2_111
+  - first:
+      213: 21300224
+    second: buttonElse2_112
+  - first:
+      213: 21300226
+    second: buttonElse2_113
+  - first:
+      213: 21300228
+    second: buttonElse2_114
+  - first:
+      213: 21300230
+    second: buttonElse2_115
+  - first:
+      213: 21300232
+    second: buttonElse2_116
+  - first:
+      213: 21300234
+    second: buttonElse2_117
+  - first:
+      213: 21300236
+    second: buttonElse2_118
+  - first:
+      213: 21300238
+    second: buttonElse2_119
+  - first:
+      213: 21300240
+    second: buttonElse2_120
+  - first:
+      213: 21300242
+    second: buttonElse2_121
+  - first:
+      213: 21300244
+    second: buttonElse2_122
+  - first:
+      213: 21300246
+    second: buttonElse2_123
+  - first:
+      213: 21300248
+    second: buttonElse2_124
+  - first:
+      213: 21300250
+    second: buttonElse2_125
+  - first:
+      213: 21300252
+    second: buttonElse2_126
+  - first:
+      213: 21300254
+    second: buttonElse2_127
+  - first:
+      213: 21300256
+    second: buttonElse2_128
+  - first:
+      213: 21300258
+    second: buttonElse2_129
+  - first:
+      213: 21300260
+    second: buttonElse2_130
+  - first:
+      213: 21300262
+    second: buttonElse2_131
+  - first:
+      213: 21300264
+    second: buttonElse2_132
+  - first:
+      213: 21300266
+    second: buttonElse2_133
+  - first:
+      213: 21300268
+    second: buttonElse2_134
+  - first:
+      213: 21300270
+    second: buttonElse2_135
+  - first:
+      213: 21300272
+    second: buttonElse2_136
+  - first:
+      213: 21300274
+    second: buttonElse2_137
+  - first:
+      213: 21300276
+    second: buttonElse2_138
+  - first:
+      213: 21300278
+    second: buttonElse2_139
+  - first:
+      213: 21300280
+    second: buttonElse2_140
+  - first:
+      213: 21300282
+    second: buttonElse2_141
+  - first:
+      213: 21300284
+    second: buttonElse2_142
+  - first:
+      213: 21300286
+    second: buttonElse2_143
+  - first:
+      213: 21300288
+    second: buttonElse2_144
+  - first:
+      213: 21300290
+    second: buttonElse2_145
+  - first:
+      213: 21300292
+    second: buttonElse2_146
+  - first:
+      213: 21300294
+    second: buttonElse2_147
+  - first:
+      213: 21300296
+    second: buttonElse2_148
+  - first:
+      213: 21300298
+    second: buttonElse2_149
+  - first:
+      213: 21300300
+    second: buttonElse2_150
+  - first:
+      213: 21300302
+    second: buttonElse2_151
+  - first:
+      213: 21300304
+    second: buttonElse2_152
+  - first:
+      213: 21300306
+    second: buttonElse2_153
+  - first:
+      213: 21300308
+    second: buttonElse2_154
+  - first:
+      213: 21300310
+    second: buttonElse2_155
+  - first:
+      213: 21300312
+    second: buttonElse2_156
+  - first:
+      213: 21300314
+    second: buttonElse2_157
+  - first:
+      213: 21300316
+    second: buttonElse2_158
+  - first:
+      213: 21300318
+    second: buttonElse2_159
+  - first:
+      213: 21300320
+    second: buttonElse2_160
+  - first:
+      213: 21300322
+    second: buttonElse2_161
+  - first:
+      213: 21300324
+    second: buttonElse2_162
+  - first:
+      213: 21300326
+    second: buttonElse2_163
+  - first:
+      213: 21300328
+    second: buttonElse2_164
+  - first:
+      213: 21300330
+    second: buttonElse2_165
+  - first:
+      213: 21300332
+    second: buttonElse2_166
+  - first:
+      213: 21300334
+    second: buttonElse2_167
+  - first:
+      213: 21300336
+    second: buttonElse2_168
+  - first:
+      213: 21300338
+    second: buttonElse2_169
+  - first:
+      213: 21300340
+    second: buttonElse2_170
+  - first:
+      213: 21300342
+    second: buttonElse2_171
+  - first:
+      213: 21300344
+    second: buttonElse2_172
+  - first:
+      213: 21300346
+    second: buttonElse2_173
+  - first:
+      213: 21300348
+    second: buttonElse2_174
+  - first:
+      213: 21300350
+    second: buttonElse2_175
+  - first:
+      213: 21300352
+    second: buttonElse2_176
+  - first:
+      213: 21300354
+    second: buttonElse2_177
+  - first:
+      213: 21300356
+    second: buttonElse2_178
+  - first:
+      213: 21300358
+    second: buttonElse2_179
+  - first:
+      213: 21300360
+    second: buttonElse2_180
+  - first:
+      213: 21300362
+    second: buttonElse2_181
+  - first:
+      213: 21300364
+    second: buttonElse2_182
+  - first:
+      213: 21300366
+    second: buttonElse2_183
+  - first:
+      213: 21300368
+    second: buttonElse2_184
+  - first:
+      213: 21300370
+    second: buttonElse2_185
+  - first:
+      213: 21300372
+    second: buttonElse2_186
+  - first:
+      213: 21300374
+    second: buttonElse2_187
+  - first:
+      213: 21300376
+    second: buttonElse2_188
+  - first:
+      213: 21300378
+    second: buttonElse2_189
+  - first:
+      213: 21300380
+    second: buttonElse2_190
+  - first:
+      213: 21300382
+    second: buttonElse2_191
+  - first:
+      213: 21300384
+    second: buttonElse2_192
+  - first:
+      213: 21300386
+    second: buttonElse2_193
+  - first:
+      213: 21300388
+    second: buttonElse2_194
+  - first:
+      213: 21300390
+    second: buttonElse2_195
+  - first:
+      213: 21300392
+    second: buttonElse2_196
+  - first:
+      213: 21300394
+    second: buttonElse2_197
+  - first:
+      213: 21300396
+    second: buttonElse2_198
+  - first:
+      213: 21300398
+    second: buttonElse2_199
+  - first:
+      213: 21300400
+    second: buttonElse2_200
+  - first:
+      213: 21300402
+    second: buttonElse2_201
+  - first:
+      213: 21300404
+    second: buttonElse2_202
+  - first:
+      213: 21300406
+    second: buttonElse2_203
+  - first:
+      213: 21300408
+    second: buttonElse2_204
+  - first:
+      213: 21300410
+    second: buttonElse2_205
+  - first:
+      213: 21300412
+    second: buttonElse2_206
+  - first:
+      213: 21300414
+    second: buttonElse2_207
+  - first:
+      213: 21300416
+    second: buttonElse2_208
+  - first:
+      213: 21300418
+    second: buttonElse2_209
+  - first:
+      213: 21300420
+    second: buttonElse2_210
+  - first:
+      213: 21300422
+    second: buttonElse2_211
+  - first:
+      213: 21300424
+    second: buttonElse2_212
+  - first:
+      213: 21300426
+    second: buttonElse2_213
+  - first:
+      213: 21300428
+    second: buttonElse2_214
+  - first:
+      213: 21300430
+    second: buttonElse2_215
+  - first:
+      213: 21300432
+    second: buttonElse2_216
+  - first:
+      213: 21300434
+    second: buttonElse2_217
+  - first:
+      213: 21300436
+    second: buttonElse2_218
+  - first:
+      213: 21300438
+    second: buttonElse2_219
+  - first:
+      213: 21300440
+    second: buttonElse2_220
+  - first:
+      213: 21300442
+    second: buttonElse2_221
+  - first:
+      213: 21300444
+    second: buttonElse2_222
+  - first:
+      213: 21300446
+    second: buttonElse2_223
+  - first:
+      213: 21300448
+    second: buttonElse2_224
+  - first:
+      213: 21300450
+    second: buttonElse2_225
+  - first:
+      213: 21300452
+    second: buttonElse2_226
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: buttonElse2_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 830
+        width: 144
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc79cafe8f416c42a13643d72c0128c
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 836
+        width: 178
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af70d19c3a09fb74caf7c343fea5223c
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 843
+        width: 170
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54e2cf89f3ca524481fc044734dddd0
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_3
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 863
+        width: 143
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4ae6e50fccd624daa2182cafe24d95
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_4
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1018
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b5ab6b0bfac45419761f8cfa4bd145
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_5
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 869
+        width: 140
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f772522eeaa38f4b915d42e3dce3f2f
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_6
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1015
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d8739143ffab545b1be1581befc3ed
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_7
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1019
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7ecb0917272974c8935dc638273f5e
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_8
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 957
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58a7ab0287711346afa16c485d1357f
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_9
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 868
+        width: 132
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b6634cdde234240902c777bcf2aea7
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 951
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2cf039c89bc2f43a34dd1d944478ac
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_11
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 950
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e52e5c4e8b6d847a3228d4263a2503
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_12
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 939
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549ca5cf18e7edc4abdbac72c56b3f8c
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_13
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 931
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd9c7b1c7d46f44dbedaf26b10c5faa
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_14
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 922
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f808dc3c64216754b8e0f8d148782a15
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_15
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 917
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a848154fa73354a9f692f0a2d0a9f6
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_16
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 865
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75de4c2baddf38449ab8aaebb09af272
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 692
+        width: 146
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51dc1c43d9fa8440b41779aaf7980ed
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_18
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 700
+        width: 157
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a3bf8fa1dd05a4faa3ad90bf73b0b1
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_19
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 723
+        width: 162
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d612e911a86ef694d9d0b714f7325489
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_20
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 724
+        width: 156
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2c8fda4d4db604faa23fe1d44f165e
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_21
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 725
+        width: 160
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74eda19d1aef3fb45a2631d87a09e6cf
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_22
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 734
+        width: 99
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6210b1f6b24e31458aa8d87d1fdc599
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 599
+        width: 196
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686fce9543244c64cb0d3ad61abcec25
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_24
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 601
+        width: 191
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054be548c20165346846850a2a92c961
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_25
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 601
+        width: 97
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04564b9a0ec8b6a4c931731cc8375bbd
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_26
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 601
+        width: 96
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ace755360d7a34b8622cd6fcd4ef7f
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_27
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 607
+        width: 200
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4192d23e942f349a6ba8f3e3181ce8
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_28
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 607
+        width: 200
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c17ef903bef7f6459bdecd8425e230f
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_29
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 514
+        width: 207
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d099ac86d53423469b8b33ba353891d
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_30
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 516
+        width: 170
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926a9fe960e481e49a3ad3097566be75
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_31
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 516
+        width: 545
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ac12a087ce2af418b0fe2994295e48
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 432
+        width: 197
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90caf3a475181c64380cf9b5b62eaad6
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_33
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 434
+        width: 179
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8d104ecb1095147adbce898a978e41
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_34
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 434
+        width: 197
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25390adb90843e740aaf91ae55bdcaa3
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_35
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 436
+        width: 151
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ab8e3ea6e176545b7ae6ac33c6d0e6
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_36
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 437
+        width: 147
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b40d72469097e74bab89c4fc80bf65a
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_37
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 436
+        width: 146
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77de4846549b704485d794b204a37fc
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_38
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 283
+        width: 219
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f7f3d58d9c67f448ff651fb8fd521d
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_39
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 355
+        width: 147
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84705d65648129b45b85ebb78c09538b
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_40
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 355
+        width: 85
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56a3571de0565e4695fea77c83f887a
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_41
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 355
+        width: 151
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7506eea74c1a44884031ca8069bcbe
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_42
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 360
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e63d7c9adec9c4f81f9829e45bc41b
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_43
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 360
+        width: 150
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817b75d923e60ec418d40c01853a6927
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_44
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 361
+        width: 131
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d39f083aaed4340a39ca2921e556ad
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_45
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 284
+        width: 135
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f35e9e35cae1244b9b82ac691d1f376
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_46
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 284
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc7507b933ab5449b7f05ebca2ec72b
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_47
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 284
+        width: 218
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3a25bcdefe57e48b38c744a5d9b04b
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_48
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 284
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7bf24ca09a81e44a57925aab254a3b
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_49
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 284
+        width: 220
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e15c7cbe3eb9f3468143bb12bade827
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 172
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830b896b3d4e95d4f97296f094cb7247
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_51
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 217
+        width: 169
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c8534781972f547a6192d9d818e251
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_52
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 218
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb5d6523e1c8694eb520730c8c79221
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_53
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 238
+        width: 81
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89541c029858fa44c9936dbc001c5257
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_54
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 230
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071c7ac1039b2ef458bb5d8704a6406e
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_55
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 223
+        width: 152
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7158288dbe420049b9cb7af47d135a7
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_56
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 223
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308e237f70c0eb248aecacf332e84b34
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_57
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 229
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3decd90fc44f674a897ecbf76903ea6
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_58
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 233
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bc9874a55cd594b9354c3bf37a8202
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_59
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 238
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b033f96aa4395b41a40dbcd32ce4aff
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_60
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 219
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f5b9d65a4a7e544847a768502f55c6
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_61
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 174
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbae707e064ee5441bf00c3e6b452c9b
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_62
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 174
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308863a7012fae04ea24efe644be2c89
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_63
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 179
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a35873e1d3d1a04f9409916dda2c744
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_64
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 190
+        width: 660
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e5ef3b044e09e4b858479ab2b04d94
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_87
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 148
+        width: 507
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe82f1d24c9cf0a49b64899b3004917b
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_105
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 121
+        width: 734
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205d1f911de88a34ca76f3d78d7b456b
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 627
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986a7ebeeba8fac4eac832ae1d83d71a
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_155
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 691
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4826f2aad52060041a19819ca5aa0644
+      internalID: 21300310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_181
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 39
+        width: 569
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38397431f35682a47a625d81e786c300
+      internalID: 21300362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_201
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 13
+        width: 526
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb2c7fed35347545a96f0da4ea6fe0e
+      internalID: 21300402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonElse2_218
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 16
+        width: 104
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d39b59d437626c4f9e575e933bc5468
+      internalID: 21300436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 257e18693c299054cbca5fe3fee1a511
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
