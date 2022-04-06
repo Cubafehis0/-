@@ -1,12 +1,11 @@
-﻿using UnityEngine;
+﻿    using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneJump : MonoBehaviour
 {
     public static SceneType NowScene = SceneType.Start;
-
     public GameObject IconCanvasObj;
-    public GameObject MapCanvasObj;
+    public GameObject ShopCanvasObj;
     public GameObject StartCanvasObj;
 
     public static SceneJump instance;
@@ -48,7 +47,6 @@ public class SceneJump : MonoBehaviour
         else if (NowScene == SceneType.Game)
         {
             Instantiate(IconCanvasObj);
-            Instantiate(MapCanvasObj);
         }
         else if (NowScene == SceneType.Game)
         {

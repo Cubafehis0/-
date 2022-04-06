@@ -91,21 +91,6 @@ public class PanelMgr : MonoBehaviour
         dict.Remove(name);
         panel.CloseAnimation();
     }
-
-
-    // 仅在首次调用 Update 方法之前调用 Start
-    void Start()
-    {
-
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
 
 

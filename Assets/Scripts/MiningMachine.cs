@@ -11,12 +11,8 @@ public enum MiningMachineStatus
 
 public class MiningMachine : MonoBehaviour
 {
-#pragma warning disable CS0649 // 从未对字段“MiningMachine.hook”赋值，字段将一直保持其默认值 null
     [SerializeField] GameObject hook;
-#pragma warning restore CS0649 // 从未对字段“MiningMachine.hook”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“MiningMachine.lineSpriteRender”赋值，字段将一直保持其默认值 null
     [SerializeField] SpriteRenderer lineSpriteRender;
-#pragma warning restore CS0649 // 从未对字段“MiningMachine.lineSpriteRender”赋值，字段将一直保持其默认值 null
     [SerializeField] float dropSpeed = 1;
     [SerializeField] float dragSpeed = 1;
     [SerializeField] float rotateSpeed = 1;
@@ -54,8 +50,8 @@ public class MiningMachine : MonoBehaviour
             DragDrop(-dragSpeed);
         else
         {
-            if (DragTreasure.GetMass() != 0)
-                DragDrop(-dragSpeed / (DragTreasure.GetMass() * 0.11f));
+            if (DragTreasure.Mass != 0)
+                DragDrop(-dragSpeed / (DragTreasure.Mass * 0.11f));
             else
                 Debug.LogError("DragTreasure Mass Is Zero!!");
         }

@@ -4,28 +4,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class BattleCanvas : MonoBehaviour
 {
-#pragma warning disable CS0649 // 从未对字段“BattleCanvas.pauseButton”赋值，字段将一直保持其默认值 null
     [SerializeField] Button pauseButton;
-#pragma warning restore CS0649 // 从未对字段“BattleCanvas.pauseButton”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“BattleCanvas.scoreTip”赋值，字段将一直保持其默认值 null
     [SerializeField] GameObject scoreTip;
-#pragma warning restore CS0649 // 从未对字段“BattleCanvas.scoreTip”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“BattleCanvas.bgImage”赋值，字段将一直保持其默认值 null
     [SerializeField] Image bgImage;
-#pragma warning restore CS0649 // 从未对字段“BattleCanvas.bgImage”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“BattleCanvas.prop1”赋值，字段将一直保持其默认值 null
     [SerializeField] GameObject prop1;
-#pragma warning restore CS0649 // 从未对字段“BattleCanvas.prop1”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“BattleCanvas.prop2”赋值，字段将一直保持其默认值 null
     [SerializeField] GameObject prop2;
-#pragma warning restore CS0649 // 从未对字段“BattleCanvas.prop2”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“BattleCanvas.prop3”赋值，字段将一直保持其默认值 null
     [SerializeField] GameObject prop3;
-#pragma warning restore CS0649 // 从未对字段“BattleCanvas.prop3”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“BattleCanvas.diamondText”赋值，字段将一直保持其默认值 null
     [SerializeField] Text diamondText;
-#pragma warning restore CS0649 // 从未对字段“BattleCanvas.diamondText”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“BattleCanvas.levelText”赋值，字段将一直保持其默认值 null
     [SerializeField] Text levelText;
     [SerializeField] GameObject scoreFlowText;
     [SerializeField] GameObject scoreStarContainer;

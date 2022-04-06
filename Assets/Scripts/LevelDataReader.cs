@@ -1,55 +1,11 @@
 ﻿using UnityEngine;
 
 
-[System.Serializable]
-public class LevelData
-{
-    public string total;
-    public string level;
-    public string timeStep;
-    public string isTimeOrStep;
-    public string target1;
-    public string target2;
-    public string type;
-    public string blood;
-    public string pos;
-    public string isCure;
-    public string isStop;
-    public string isShow;
-    public string isOnNum;
-    public string isSpeed;
-    public string height;
-    public string route;
-
-    public override string ToString()
-    {
-        return "total: " + total
-             + ", level: " + level
-             + ", timeStep: " + timeStep
-             + ", isTimeOrStep: " + isTimeOrStep
-             + ", target1: " + target1
-             + ", target2: " + target2
-             + ", type: " + type
-             + ", blood: " + blood
-             + ", pos: " + pos
-             + ", isCure: " + isCure
-             + ", isStop: " + isStop
-             + ", isShow: " + isShow
-             + ", isOnNum: " + isOnNum
-             + ", isSpeed: " + isSpeed
-             + ", height: " + height
-             + ", route: " + route;
-    }
-}
-
-
 public static class LevelDataReader
 {
     private class LevelDataArray
     {
-#pragma warning disable CS0649 // 从未对字段“LevelDataReader.LevelDataArray.json”赋值，字段将一直保持其默认值 null
         public LevelData[] json;
-#pragma warning restore CS0649 // 从未对字段“LevelDataReader.LevelDataArray.json”赋值，字段将一直保持其默认值 null
     }
 
     public static LevelData[] GetLevelDatas(int level)
@@ -58,4 +14,3 @@ public static class LevelDataReader
         return JsonUtility.FromJson<LevelDataArray>(jsonText).json;
     }
 }
-

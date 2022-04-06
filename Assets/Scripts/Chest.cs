@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Chest : Treasure
 {
-#pragma warning disable CS0649 // 从未对字段“Chest.spriteRenderer”赋值，字段将一直保持其默认值 null
     [SerializeField] SpriteRenderer spriteRenderer;
-#pragma warning restore CS0649 // 从未对字段“Chest.spriteRenderer”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“Chest.chestOpenSprite”赋值，字段将一直保持其默认值 null
     [SerializeField] Sprite chestOpenSprite;
-#pragma warning restore CS0649 // 从未对字段“Chest.chestOpenSprite”赋值，字段将一直保持其默认值 null
     public bool IsOpened { get; set; }
 
-    protected override void onGrab()
+    protected override void OnGrab()
     {
         if (!IsOpened)
         {
@@ -38,7 +34,7 @@ public class Chest : Treasure
                          .SetDelay(2f)
                          .OnComplete(() =>
                          {
-                             BattleCanvas.Instance.AddScore(chestTreasure.GetScore());
+                             BattleCanvas.Instance.AddScore(chestTreasure.Score);
                              GameObject.Destroy(chestTreasure.gameObject);
                          });
 

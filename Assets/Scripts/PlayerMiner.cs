@@ -2,12 +2,8 @@
 
 public class PlayerMiner : MonoBehaviour
 {
-#pragma warning disable CS0649 // 从未对字段“PlayerMiner.miningMachine”赋值，字段将一直保持其默认值 null
     [SerializeField] MiningMachine miningMachine;
-#pragma warning restore CS0649 // 从未对字段“PlayerMiner.miningMachine”赋值，字段将一直保持其默认值 null
-#pragma warning disable CS0649 // 从未对字段“PlayerMiner.animator”赋值，字段将一直保持其默认值 null
     [SerializeField] Animator animator;
-#pragma warning restore CS0649 // 从未对字段“PlayerMiner.animator”赋值，字段将一直保持其默认值 null
 
     public void Drop()
     {
@@ -50,7 +46,7 @@ public class PlayerMiner : MonoBehaviour
             Treasure treasure = collision.GetComponentInParent<Treasure>();
             if (treasure == miningMachine.DragTreasure)
             {
-                BattleCanvas.Instance.AddScore(treasure.GetScore());
+                BattleCanvas.Instance.AddScore(treasure.Score);
                 miningMachine.DragTreasure = null;
                 GameObject.Destroy(treasure.gameObject);
             }
