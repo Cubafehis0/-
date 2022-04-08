@@ -48,18 +48,6 @@ public class LVConf : MonoBehaviour
         }
 
     }
-
-    public void ClickLV()
-    {
-        int GateLevel = PlayerPrefs.GetInt("DB_GateLevel");
-        if (LV <= GateLevel)
-        {
-            SoundManager.instance.PlayBtn();
-            PlayerDataMgr.Instance.PlayLV = LV;
-            PanelMgr.instance.OpenPanel<PlayPanel>("");
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {

@@ -44,17 +44,6 @@ public class PowerStorePanel : PanelBase
 
     private void UseDiamondAddLive(int useDiamond, int addLive)
     {
-        int Diamond = PlayerData.GetDiamond();
-        if (Diamond < useDiamond)
-        {
-            PanelMgr.instance.OpenPanel<DiamondStorePanel>("");
-        }
-        else
-        {
-            PlayerData.UseDiamond(useDiamond);
-            PlayerData.AddLive(addLive);
-            Close();
-        }
     }
 
 }

@@ -12,5 +12,4 @@ public class AnimationListener : MonoBehaviour
     }
 
 }
-
 public class AnimationEvent : UnityEvent<int> { }

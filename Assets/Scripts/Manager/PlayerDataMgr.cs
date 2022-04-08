@@ -55,7 +55,7 @@ public class PlayerDataMgr : MonoBehaviour
     /// <summary>
     /// 游戏选择道具列表
     /// </summary>
-    public List<PlayGameProps> playGamePropsList = new List<PlayGameProps>();
+    public List<GoodsID> playGamePropsList = new List<GoodsID>();
 
     void FixedUpdate()
     {

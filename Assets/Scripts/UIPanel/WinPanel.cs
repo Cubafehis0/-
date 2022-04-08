@@ -15,8 +15,6 @@ public class WinPanel : PanelBase
         base.Init(args);
         layer = PanelLayer.Panel;
         instance = this;
-        //ÔùËÍ300½ğ±Ò
-        PlayerData.AddGold(300);
         score.text = EntityManager.Instance.GetPlayerMinerEntity().score.ToString();
         int starCount = EntityManager.Instance.GetPlayerMinerEntity().starCount;
         SetStarNumber(starCount);
