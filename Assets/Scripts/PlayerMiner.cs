@@ -4,40 +4,34 @@ public class PlayerMiner : MonoBehaviour
 {
     [SerializeField] MiningMachine miningMachine;
     [SerializeField] Animator animator;
-
-    public void Drop()
+    public void Update()
     {
-        if (IsDropAble())
+        if(Input.GetKeyDown(KeyCode.DownArrow))
         {
-            animator.Play("Drab");
-            miningMachine.Status = MiningMachineStatus.Drop;
-
-            var levelEntity = EntityManager.Instance.GetLevelEntity();
-            if (!levelEntity.isTimeOrStep)
-                BattleCanvas.Instance.GetScoreTipPanel().SetTimeOrStep(--levelEntity.timeStep);
+            if(IsDropAble)
+            {
+                miningMachine.Status = MiningMachineStatus.Drop;
+            }
         }
-    }
 
-
-    public bool IsDropAble()
-    {
-        return miningMachine.Status == MiningMachineStatus.Idle;
-    }
-
-
-    public void UpdateProcess()
-    {
+        animator.SetInteger("State", (int)miningMachine.Status);
+        animator.SetFloat("Speed", miningMachine.Speed);
+        Debug.Log(miningMachine.Speed);
         miningMachine.UpdateProcess();
     }
+    
+
+
+    private bool IsDropAble=>miningMachine.Status == MiningMachineStatus.Idle;
 
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Enter");
         if (collision.tag == "Hook")
         {
             if (miningMachine.Status != MiningMachineStatus.Idle)
             {
-                animator.Play("Idle");
                 miningMachine.Status = MiningMachineStatus.Idle;
             }
         }
@@ -46,7 +40,7 @@ public class PlayerMiner : MonoBehaviour
             Treasure treasure = collision.GetComponentInParent<Treasure>();
             if (treasure == miningMachine.DragTreasure)
             {
-                BattleCanvas.Instance.AddScore(treasure.Score);
+                PlayerDataMgr.Instance.Score+=treasure.Score;
                 miningMachine.DragTreasure = null;
                 GameObject.Destroy(treasure.gameObject);
             }

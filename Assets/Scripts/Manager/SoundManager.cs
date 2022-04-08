@@ -1,13 +1,15 @@
-﻿using UnityEngine;
-
+﻿using System;
+using UnityEngine;
+[System.Serializable]
+public class StringAudioClipDictionary : SerializableDictionary<string, AudioClip> { }
 public class SoundManager : MonoBehaviour
 {
 
     public AudioSource audioSource;
 
     public static SoundManager instance;
-
-    public AudioClip[] audioClip;
+    [SerializeField]
+    private StringAudioClipDictionary audioClips;
 
     void Awake()
     {
@@ -39,14 +41,20 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void PlayBtn()
+    public void PlayMusic(string name)
     {
-        audioSource.PlayOneShot(audioClip[0]);
+        if(audioClips.ContainsKey(name))
+            audioSource.PlayOneShot(audioClips[name]);
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    internal void PlayBtn()
+    {
+        throw new NotImplementedException();
     }
 }

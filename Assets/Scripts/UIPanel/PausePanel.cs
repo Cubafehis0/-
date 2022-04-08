@@ -76,6 +76,7 @@ public class PausePanel : PanelBase
     public void OnReplayButton()
     {
         SoundManager.instance.PlayBtn();
+        PlayerDataMgr.Instance.NewGame();
         SceneJump.instance.Jump(SceneType.Game);
     }
 

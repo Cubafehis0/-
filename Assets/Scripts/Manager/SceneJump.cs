@@ -1,13 +1,10 @@
-﻿    using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using Singleton;
+using UIFramework;
 public class SceneJump : MonoBehaviour
 {
     public static SceneType NowScene = SceneType.Start;
-    public GameObject IconCanvasObj;
-    public GameObject ShopCanvasObj;
-    public GameObject StartCanvasObj;
-
     public static SceneJump instance;
 
     private void Awake()
@@ -21,7 +18,9 @@ public class SceneJump : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         SceneManager.activeSceneChanged += ChangedActiveScene;
     }
-
+    private void Start()
+    {
+    }
     /// <summary>
     /// 初次加载场景是也会调用
     /// </summary>
@@ -30,57 +29,36 @@ public class SceneJump : MonoBehaviour
     private void ChangedActiveScene(Scene current, Scene next)
     {
         Debug.Log("SceneChange");
-        //string currentName = current.name;
-
-        //if (currentName == null)
-        //{
-        //    // Scene1 has been removed
-        //    currentName = "Replaced";
-        //}
-
-        //Debug.Log("Scenes: " + currentName + ", " + next.name);
-
+        Singleton<UIManager>.Instance.Init();
         if (NowScene == SceneType.Start)
         {
-            Instantiate(StartCanvasObj);
+            Singleton<ContextManager>.Instance.Push(new BaseContext(UIType.StartCanvas));
         }
         else if (NowScene == SceneType.Game)
         {
-            Instantiate(IconCanvasObj);
+            Singleton<ContextManager>.Instance.Push(new GameCanvasContext(UIType.GameCanvas));
+            PlayerDataMgr.Instance.GameStart();
         }
         else if (NowScene == SceneType.Game)
         {
             //SceneManager.LoadScene("start");
         }
     }
-
-
-    // Use this for initialization
-    void Start()
-    {
-        //Application.LoadLevel("start");
-    }
-
     public void Jump(SceneType sceneType)
     {
+        Singleton<ContextManager>.Instance.Clear();
         if (sceneType == SceneType.Start)
         {
-            SceneManager.LoadScene("start");
+            SceneManager.LoadScene("Start");
         }
         else if (sceneType == SceneType.Shop)
         {
-            SceneManager.LoadScene("start");
+            SceneManager.LoadScene("Shop");
         }
         else if (sceneType == SceneType.Game)
         {
-            SceneManager.LoadScene("battle");
+            SceneManager.LoadScene("Game");
         }
         NowScene = sceneType;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

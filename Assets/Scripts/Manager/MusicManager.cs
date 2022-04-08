@@ -18,13 +18,6 @@ public class MusicManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         RefreshSound();
     }
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     public void RefreshSound()
     {
         if (KeyValue.GetBool("DB_CloseMusic"))
@@ -37,9 +30,4 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

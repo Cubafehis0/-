@@ -3,9 +3,9 @@
 
 public enum MiningMachineStatus
 {
-    Idle,
-    Drop,
-    Drag
+    Idle=0,
+    Drop=1,
+    Drag=2
 }
 
 
@@ -17,6 +17,23 @@ public class MiningMachine : MonoBehaviour
     [SerializeField] float dragSpeed = 1;
     [SerializeField] float rotateSpeed = 1;
     [SerializeField] float rotateAngleLimit = 80;
+    [SerializeField] float maxLineLen;
+    public float Speed
+    {
+        get
+        {
+            if (Status == MiningMachineStatus.Idle || Status == MiningMachineStatus.Drop) return 1;
+            else return DragSpeed/dragSpeed;
+        }
+    }
+    private float DragSpeed
+    {
+        get
+        {
+            //v0(1 - k * m)
+            return dragSpeed * (1 - 0.01f * (DragTreasure?.Mass??0));
+        }
+    }
     bool isRotateRight = true;
 
     public Treasure DragTreasure { get; set; }
@@ -34,6 +51,8 @@ public class MiningMachine : MonoBehaviour
                 Drop();
             else if (Status == MiningMachineStatus.Drag)
                 Drag();
+            if (lineSpriteRender.size.x > maxLineLen)
+                Status = MiningMachineStatus.Drag;
         }
     }
 
@@ -46,15 +65,7 @@ public class MiningMachine : MonoBehaviour
 
     void Drag()
     {
-        if (DragTreasure == null)
-            DragDrop(-dragSpeed);
-        else
-        {
-            if (DragTreasure.Mass != 0)
-                DragDrop(-dragSpeed / (DragTreasure.Mass * 0.11f));
-            else
-                Debug.LogError("DragTreasure Mass Is Zero!!");
-        }
+        DragDrop(-DragSpeed);
     }
 
 
@@ -79,19 +90,7 @@ public class MiningMachine : MonoBehaviour
             else
                 isRotateRight = true;
         }
-
         transform.position = position;
-
-        var levelEntity = EntityManager.Instance.GetLevelEntity();
-        if (!levelEntity.isTimeOrStep && levelEntity.timeStep == 0)
-        {
-            if (EntityManager.Instance.GetPlayerMinerEntity().starCount == 0)
-                PanelMgr.instance.OpenPanel<LosePanel>("");
-            else
-                PanelMgr.instance.OpenPanel<WinPanel>("");
-
-            EntityManager.Instance.GetLevelEntity().isPause = true;
-        }
     }
 
 
@@ -104,11 +103,10 @@ public class MiningMachine : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (Status == MiningMachineStatus.Drop)
         {
-            if (collision.tag == "Wall")
-                Status = MiningMachineStatus.Drag;
-            else if (collision.tag == "Treasures")
+            if (collision.tag == "Treasures")
             {
                 Treasure treasure = collision.transform.GetComponentInParent<Treasure>();
                 float treasureHalfWidth = treasure.GetComponent<SpriteRenderer>().sprite.bounds.size.x * 0.5f;
@@ -119,8 +117,6 @@ public class MiningMachine : MonoBehaviour
                 DragTreasure = treasure;
                 Status = MiningMachineStatus.Drag;
             }
-            else if (collision.tag == "Chest")
-                Status = MiningMachineStatus.Drag;
         }
     }
 }

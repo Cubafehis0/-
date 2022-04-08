@@ -36,7 +36,7 @@ public class PlayPanel : PanelBase
         PropButtons[3].onClick.AddListener(OnPropButton3);
         PropButtons[4].onClick.AddListener(OnPropButton4);
         PropButtons[5].onClick.AddListener(OnPropButton5);
-        DataManager.instance.playGamePropsList.Clear();
+        PlayerDataMgr.Instance.playGamePropsList.Clear();
     }
 
     private IEnumerator LiveUpdate()
@@ -149,12 +149,12 @@ public class PlayPanel : PanelBase
             SetHint(6);
         }
         //刷新存储的道具
-        DataManager.instance.playGamePropsList.Clear();
+        PlayerDataMgr.Instance.playGamePropsList.Clear();
         for (int i = 0; i < SelectionStatuss.Length; i++)
         {
             if (SelectionStatuss[i] == true)
             {
-                DataManager.instance.playGamePropsList.Add((PlayGameProps)i);
+                PlayerDataMgr.Instance.playGamePropsList.Add((PlayGameProps)i);
             }
 
         }

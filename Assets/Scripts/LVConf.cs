@@ -55,7 +55,7 @@ public class LVConf : MonoBehaviour
         if (LV <= GateLevel)
         {
             SoundManager.instance.PlayBtn();
-            DataManager.instance.PlayLV = LV;
+            PlayerDataMgr.Instance.PlayLV = LV;
             PanelMgr.instance.OpenPanel<PlayPanel>("");
         }
     }

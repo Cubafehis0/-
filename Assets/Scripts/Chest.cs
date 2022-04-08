@@ -18,7 +18,8 @@ public class Chest : Treasure
                 .OnComplete(() => GameObject.Destroy(gameObject));
 
 
-            Vector3 destPos = BattleCanvas.Instance.GetScoreTipPanel().transform.position + new Vector3(0.25f, -0.3f, 0);
+            //Vector3 destPos = BattleCanvas.Instance.GetScoreTipPanel().transform.position + new Vector3(0.25f, -0.3f, 0);
+            Vector3 destPos = Vector3.zero;
             Treasure chestTreasure = getRandomChestTreasure();
             chestTreasure.transform.position = new Vector3(transform.position.x - 0.15f, transform.position.y, 0);
             chestTreasure.transform.SetParent(transform.parent);
@@ -34,7 +35,7 @@ public class Chest : Treasure
                          .SetDelay(2f)
                          .OnComplete(() =>
                          {
-                             BattleCanvas.Instance.AddScore(chestTreasure.Score);
+                             //BattleCanvas.Instance.AddScore(chestTreasure.Score);
                              GameObject.Destroy(chestTreasure.gameObject);
                          });
 

@@ -22,7 +22,7 @@ public class WinPanel : PanelBase
         SetStarNumber(starCount);
 
         int GateLevel = PlayerPrefs.GetInt("DB_GateLevel");
-        if (GateLevel == DataManager.instance.PlayLV)
+        if (GateLevel == PlayerDataMgr.Instance.PlayLV)
         {
             GateLevel++;
             PlayerPrefs.SetInt("DB_GateLevel", GateLevel);
@@ -65,7 +65,7 @@ public class WinPanel : PanelBase
     public void OnNextButton()
     {
         SoundManager.instance.PlayBtn();
-        DataManager.instance.PlayLV++;
+        PlayerDataMgr.Instance.PlayLV++;
         SceneJump.instance.Jump(SceneType.Game);
     }
 }

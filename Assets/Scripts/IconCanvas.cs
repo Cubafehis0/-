@@ -67,19 +67,13 @@ public class IconCanvas : MonoBehaviour
     public void OpenGoldStorePanel()
     {
         SoundManager.instance.PlayBtn();
-        PanelMgr.instance.OpenPanel<GoldStorePanel>("");
+        //PanelMgr.instance.OpenPanel<GoldStorePanel>("");
     }
 
     public void OpenPowerStorePanel()
     {
         SoundManager.instance.PlayBtn();
         PanelMgr.instance.OpenPanel<PowerStorePanel>("");
-    }
-
-    public void OpenMusicSettingPanel()
-    {
-        SoundManager.instance.PlayBtn();
-        PanelMgr.instance.OpenPanel<MusicSettingPanel>("");
     }
 
     public void OpenKeyPanel()
