@@ -6,7 +6,7 @@ public class PlayerMiner : MonoBehaviour
     [SerializeField] Animator animator;
     public void Update()
     {
-        if (GameControl.Instance.isGaming)
+        if (GameControl .Instance.isGaming)
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {

@@ -1,6 +1,5 @@
 ﻿public class LuckGressProp:IProp
 {
-
     public void Use(params object[] args)
     {
         Chest.p = Chest.p2;

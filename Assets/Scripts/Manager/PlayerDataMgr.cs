@@ -97,7 +97,7 @@ public class PlayerDataMgr : MonoBehaviour,IManager
             }
         }
     }
-    private void Awake()
+    void Awake()
     {
         if (Instance != null)
         {

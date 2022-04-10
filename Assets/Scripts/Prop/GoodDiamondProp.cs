@@ -12,7 +12,6 @@
     }
     public void OnRemove(params object[] args)
     {
-
         MiningMachine.OnDrag.RemoveListener(OnGrab);
     }
 }

@@ -16,7 +16,6 @@ public static class KeyValue
         PlayerPrefs.DeleteAll();
     }
 
-
     public static void SetDouble(string key, double value)
     {
         PlayerPrefs.SetString(key, value.ToString());

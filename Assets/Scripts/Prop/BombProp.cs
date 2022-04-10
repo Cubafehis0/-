@@ -5,7 +5,6 @@ public class BombProp : IProp
     {
         
     }
-
     public void Use(params object[] args)
     {
         SoundManager.Instance.PlayMusic("Explosion");
