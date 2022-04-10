@@ -18,10 +18,10 @@ public class PlayerMiner : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                if (miningMachine.Status == MiningMachineStatus.Drag)
+                if (miningMachine.Status == MiningMachineStatus.Drag && miningMachine.DragTreasure!=null)
                 {
                     if (PlayerDataMgr.Instance.ContainProp(PropID.Bomb))
-                    {
+                    {                        
                         PlayerDataMgr.Instance.UseProp(PropID.Bomb, miningMachine);
                     }
                 }

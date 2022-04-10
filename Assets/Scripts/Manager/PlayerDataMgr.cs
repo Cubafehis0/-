@@ -31,7 +31,7 @@ public class PlayerDataMgr : MonoBehaviour,IManager
         OnPropListChanged.RemoveAllListeners();
         propsList = new Dictionary<PropID, int>()
         {
-            {PropID.Bomb,0},
+            {PropID.Bomb,10},
             {PropID.GoodDiamond,0},
             {PropID.LuckGress,0},
             {PropID.StrengthWater,0},
