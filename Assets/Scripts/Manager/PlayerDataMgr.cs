@@ -3,21 +3,18 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerDataMgr : MonoBehaviour
+public interface IManager
 {
+    void TurnEnd();
+    void TurnStart();
+}
 
+
+public class PlayerDataMgr : MonoBehaviour,IManager
+{
     public static PlayerDataMgr Instance;
-
-
-    private List<LevelData> levelsData = new List<LevelData>();
-    /// <summary>
-    /// 玩家要玩的关卡
-    /// </summary>
     public int PlayLV = 1;
-    public bool IsFinished
-    {
-        get => PlayLV ==levelsData.Count;
-    }
+    private int score;
     public int Score
     {
         get => score;
@@ -27,49 +24,79 @@ public class PlayerDataMgr : MonoBehaviour
             OnScoreChanged?.Invoke(Score);
         }
     }
-    public int LeftTime
+    public void NewGame()
     {
-        get => Mathf.CeilToInt(leftTime);
-        private set
+        OnScoreChanged.RemoveAllListeners();
+        OnTurnEnd.RemoveAllListeners();
+        OnPropListChanged.RemoveAllListeners();
+        propsList = new Dictionary<PropID, int>()
         {
-            OnTimeChanged?.Invoke(LeftTime);
+            {PropID.Bomb,0},
+            {PropID.GoodDiamond,0},
+            {PropID.LuckGress,0},
+            {PropID.StrengthWater,0},
+            {PropID.StoneBook,0},
+        };
+        PlayLV = 1;
+        score = 0;
+    }
+    public void NextTurn()
+    {
+        PlayLV++;
+    }
+
+    [HideInInspector] public UnityEvent<int> OnScoreChanged;
+    [HideInInspector] public UnityEvent OnTurnEnd;
+    #region 道具相关
+    Dictionary<PropID, int> propsList = new Dictionary<PropID, int>();
+    [HideInInspector] public UnityEvent OnPropListChanged;
+    public Dictionary<PropID, int> GetProps()
+    {
+        return propsList;
+    }
+    public bool ContainProp(PropID id)=> propsList[id] != 0;
+    public void AddProps(PropID id)
+    {
+        propsList[id]++;
+        OnPropListChanged?.Invoke();
+    }
+    public int GetPropCnt(PropID id)=>propsList[id];
+    public void RemoveProp(PropID id)
+    {
+        propsList[id]--;
+        OnPropListChanged?.Invoke();
+    }
+    public void UseProp(PropID id, params object[] args)
+    {
+        var prop = PropManager.CreateProp(id);
+        prop.Use(args);
+        if (PropManager.GetPropRemoveType(id) == PropRemoveType.AfterUse)
+        {
+            prop.OnRemove();
+            RemoveProp(id);
+        }
+        else if (PropManager.GetPropRemoveType(id) == PropRemoveType.OnTurnEnd)
+        {
+            OnTurnEnd.AddListener(delegate { RemoveProp(id); prop.OnRemove(); });
         }
     }
-    public int TargetScore
+    #endregion
+    public void TurnEnd()
     {
-        get => targetScore;
+        OnTurnEnd?.Invoke();
+        OnTurnEnd.RemoveAllListeners();
     }
-
-    [HideInInspector]
-    public UnityEvent<int> OnScoreChanged;
-    [HideInInspector]
-    public UnityEvent<int> OnTimeChanged;
-    public TreasureidIntSerializableDictionary TreasureInfo
+    public void TurnStart()
     {
-        get => LevelInfo.treasureInfo;
+        foreach(var prop in propsList)
+        {
+            if(PropManager.GetPropUseType(prop.Key)==PropUseType.Auto)
+            {
+                for (int i = 0; i < prop.Value; i++)
+                    UseProp(prop.Key);
+            }
+        }
     }
-    private LevelData LevelInfo
-    {
-        get => levelsData[PlayLV - 1];
-    }
-    /// <summary>
-    /// 游戏选择道具列表
-    /// </summary>
-    public List<GoodsID> playGamePropsList = new List<GoodsID>();
-
-    void FixedUpdate()
-    {
-        leftTime -= Time.deltaTime;
-        LeftTime = Mathf.CeilToInt(leftTime);
-    }
-    public void GameStart()
-    {
-        leftTime = LevelInfo.time;
-        LeftTime = Mathf.CeilToInt(leftTime);
-    }
-    private int score;
-    private float leftTime;
-    private int targetScore;
     private void Awake()
     {
         if (Instance != null)
@@ -80,22 +107,7 @@ public class PlayerDataMgr : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         OnScoreChanged = new UnityEvent<int>();
-        OnTimeChanged = new UnityEvent<int>();
-        foreach (var json in Resources.LoadAll<TextAsset>("Levels"))
-        {
-            levelsData.Add(JsonUtility.FromJson<LevelData>(json.text));
-        }
-        levelsData.Sort((l, r) => l.level - r.level);
-    }
-    public void NewGame()
-    {
-        PlayLV = 1;
-        score = 0;
-        targetScore = LevelInfo.targetScore;
-    }
-    public void NextGame()
-    {
-        PlayLV++;
-        targetScore = LevelInfo.targetScore;
-    }
+        OnTurnEnd = new UnityEvent();
+        OnPropListChanged= new UnityEvent();
+    }    
 }

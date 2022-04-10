@@ -6,45 +6,30 @@ public class PlayerMiner : MonoBehaviour
     [SerializeField] Animator animator;
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.DownArrow))
+        if (GameControl.Instance.isGaming)
         {
-            if(IsDropAble)
+            if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                miningMachine.Status = MiningMachineStatus.Drop;
+                if (IsDropAble)
+                {
+                    SoundManager.Instance.PlayMusic("Drop");
+                    miningMachine.Status = MiningMachineStatus.Drop;
+                }
             }
-        }
-
-        animator.SetInteger("State", (int)miningMachine.Status);
-        animator.SetFloat("Speed", miningMachine.Speed);
-        Debug.Log(miningMachine.Speed);
-        miningMachine.UpdateProcess();
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                if (miningMachine.Status == MiningMachineStatus.Drag)
+                {
+                    if (PlayerDataMgr.Instance.ContainProp(PropID.Bomb))
+                    {
+                        PlayerDataMgr.Instance.UseProp(PropID.Bomb, miningMachine);
+                    }
+                }
+            }
+            animator.SetInteger("State", (int)miningMachine.Status);
+            animator.SetFloat("Speed", miningMachine.Speed);
+            miningMachine.UpdateProcess();
+        }        
     }
-    
-
-
     private bool IsDropAble=>miningMachine.Status == MiningMachineStatus.Idle;
-
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("Enter");
-        if (collision.tag == "Hook")
-        {
-            if (miningMachine.Status != MiningMachineStatus.Idle)
-            {
-                miningMachine.Status = MiningMachineStatus.Idle;
-            }
-        }
-        else if (collision.tag == "Treasures")
-        {
-            Treasure treasure = collision.GetComponentInParent<Treasure>();
-            if (treasure == miningMachine.DragTreasure)
-            {
-                PlayerDataMgr.Instance.Score+=treasure.Score;
-                miningMachine.DragTreasure = null;
-                GameObject.Destroy(treasure.gameObject);
-            }
-        }
-    }
-
 }

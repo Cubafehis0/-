@@ -39,25 +39,25 @@ public class MusicSettingPanel : BaseView
             SoundOFF.gameObject.SetActive(false);
         }
         MusicManager.Instance.RefreshSound();
-        SoundManager.instance.RefreshSound();
+        SoundManager.Instance.RefreshSound();
     }
     public void ClickMusic()
     {
         bool DB_CloseMusic = KeyValue.GetBool("DB_CloseMusic");
         KeyValue.SetBool("DB_CloseMusic", !DB_CloseMusic);
         ResMusicPanel();
-        SoundManager.instance.PlayMusic("BtnClick");
+        SoundManager.Instance.PlayMusic("BtnClick");
     }
     public void ClickSound()
     {
         bool DB_CloseSound = KeyValue.GetBool("DB_CloseSound");
         KeyValue.SetBool("DB_CloseSound", !DB_CloseSound);
         ResMusicPanel();
-        SoundManager.instance.PlayMusic("BtnClick");
+        SoundManager.Instance.PlayMusic("BtnClick");
     }
     public void Click2Exit()
     {
-        SoundManager.instance.PlayMusic("BtnClick");
+        SoundManager.Instance.PlayMusic("BtnClick");
         Singleton<ContextManager>.Instance.Pop();
     }
 }

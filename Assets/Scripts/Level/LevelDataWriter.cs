@@ -6,7 +6,7 @@ using UnityEngine;
 public class LevelDataWriter : MonoBehaviour
 {
     public LevelData levelData;
-    static string LevelPath = Path.Combine(@"D:/GoldMinner/Assets/Resources", "Levels");
+    static string LevelPath = Path.Combine(@"C:/Users/26560/Documents/GameProject/GoldMinner/Assets/Resources", "Levels");
     [ContextMenu("–¥»Î")]
     public void WriteIntoFile()
     {

@@ -15,8 +15,5 @@ public class PurchaseGood : MonoBehaviour
     {
         
     }
-    public void Click2Purchase()
-    {
-        Debug.Log("Click2Purchase"); 
-    }
+    
 }

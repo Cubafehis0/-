@@ -272,6 +272,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1311865783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311865784}
+  m_Layer: 0
+  m_Name: Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1311865784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311865783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 540.7497, y: 503.24826, z: -10.050608}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &1454112262
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -367,8 +397,22 @@ MonoBehaviour:
   audioClips:
     m_keys:
     - BtnClick
+    - Explosion
+    - ChestOpen
+    - Drop
+    - Drag
+    - Purchase
+    - DragTreasure
+    - NoMoney
     m_values:
     - {fileID: 8300000, guid: 5a836bb80c451004087a8c69d4f5ef4c, type: 3}
+    - {fileID: 8300000, guid: d4abbc054a10d7c41a806518436fa73a, type: 3}
+    - {fileID: 8300000, guid: fd97ab54ce803e34eaf935d14b7569dd, type: 3}
+    - {fileID: 8300000, guid: 797dd6207c85ee24fb1d23c23cdeac11, type: 3}
+    - {fileID: 8300000, guid: 3b0f420a33590d849b08879aa923a8fc, type: 3}
+    - {fileID: 8300000, guid: 26bac1b543db77c41abd59d8926dee6a, type: 3}
+    - {fileID: 8300000, guid: 19bddb69a048fc14cadf9c642a133966, type: 3}
+    - {fileID: 8300000, guid: e72a40da353794042b3f850910a03f6a, type: 3}
 --- !u!82 &1889834163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -490,6 +534,8 @@ GameObject:
   - component: {fileID: 2033020344}
   - component: {fileID: 2033020345}
   - component: {fileID: 2033020346}
+  - component: {fileID: 2033020347}
+  - component: {fileID: 2033020348}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -536,13 +582,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayLV: 0
+  DragDropSpeed: 3.5
   OnScoreChanged:
     m_PersistentCalls:
       m_Calls: []
+  OnTurnEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPropListChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2033020347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033020343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a30ccaa7afae82428c52156c9c310eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGaming: 0
   OnTimeChanged:
     m_PersistentCalls:
       m_Calls: []
-  playGamePropsList: 
+  OnTurnStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTurnEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2033020348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033020343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c5719bdf932a94baae092973fc63fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2101110188
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +657,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a036ccbfd823acb4483af6b2ef540654, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -689,3 +775,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2101110189}
+  audioClips:
+    m_keys:
+    - Home
+    - Shop
+    - Lose
+    - Win
+    - Game
+    m_values:
+    - {fileID: 8300000, guid: a036ccbfd823acb4483af6b2ef540654, type: 3}
+    - {fileID: 8300000, guid: 8f7bf6540f0d5224e9a75105caf437f6, type: 3}
+    - {fileID: 8300000, guid: 0edd1c0555e923b42ae5370d87f63cad, type: 3}
+    - {fileID: 8300000, guid: 3d3822dbddd13ae4793aff3141f41fd3, type: 3}
+    - {fileID: 8300000, guid: 4aa990420d129654883880cbd7ec1b90, type: 3}

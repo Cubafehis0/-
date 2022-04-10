@@ -2,24 +2,28 @@
 using UnityEngine.SceneManagement;
 using Singleton;
 using UIFramework;
+using System.Collections.Generic;
+using System.Collections;
+
 public class SceneJump : MonoBehaviour
 {
     public static SceneType NowScene = SceneType.Start;
-    public static SceneJump instance;
+    public static SceneJump Instance;
 
     private void Awake()
     {
-        if (instance != null)
+        if (Instance != null)
         {
             Destroy(gameObject);
             return;
         }
-        instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
         SceneManager.activeSceneChanged += ChangedActiveScene;
     }
     private void Start()
     {
+
     }
     /// <summary>
     /// 初次加载场景是也会调用
@@ -28,7 +32,6 @@ public class SceneJump : MonoBehaviour
     /// <param name="next"></param>
     private void ChangedActiveScene(Scene current, Scene next)
     {
-        Debug.Log("SceneChange");
         Singleton<UIManager>.Instance.Init();
         if (NowScene == SceneType.Start)
         {
@@ -36,17 +39,18 @@ public class SceneJump : MonoBehaviour
         }
         else if (NowScene == SceneType.Game)
         {
+            GameControl.Instance.TurnStart();
             Singleton<ContextManager>.Instance.Push(new GameCanvasContext(UIType.GameCanvas));
-            PlayerDataMgr.Instance.GameStart();
         }
-        else if (NowScene == SceneType.Game)
+        else if (NowScene == SceneType.Shop)
         {
-            //SceneManager.LoadScene("start");
+            Singleton<ContextManager>.Instance.Push(new ShopCanvasContext(UIType.ShopCanvas));
         }
     }
     public void Jump(SceneType sceneType)
     {
         Singleton<ContextManager>.Instance.Clear();
+        NowScene = sceneType;
         if (sceneType == SceneType.Start)
         {
             SceneManager.LoadScene("Start");
@@ -59,6 +63,5 @@ public class SceneJump : MonoBehaviour
         {
             SceneManager.LoadScene("Game");
         }
-        NowScene = sceneType;
     }
 }

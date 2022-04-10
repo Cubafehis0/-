@@ -4,31 +4,21 @@ using UnityEngine;
 public class StringAudioClipDictionary : SerializableDictionary<string, AudioClip> { }
 public class SoundManager : MonoBehaviour
 {
-
     public AudioSource audioSource;
-
-    public static SoundManager instance;
+    public static SoundManager Instance;
     [SerializeField]
     private StringAudioClipDictionary audioClips;
-
     void Awake()
     {
-        if (instance != null)
+        if (Instance != null)
         {
             Destroy(gameObject);
             return;
         }
-        instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
         RefreshSound();
     }
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     public void RefreshSound()
     {
         if (KeyValue.GetBool("DB_CloseSound"))
@@ -40,21 +30,10 @@ public class SoundManager : MonoBehaviour
             audioSource.mute = false;
         }
     }
-
     public void PlayMusic(string name)
     {
-        if(audioClips.ContainsKey(name))
+        if (audioClips.ContainsKey(name))
             audioSource.PlayOneShot(audioClips[name]);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    internal void PlayBtn()
-    {
-        throw new NotImplementedException();
+        else Debug.Log($"{name}音效不存在");
     }
 }
