@@ -2,11 +2,11 @@
 {
     public void OnRemove(params object[] args)
     {
-        MiningMachine.SpeedHalf();
+        MiningMachine.SpeedFactor/=2;
     }
 
     public void Use(params object[] args)
     {
-        MiningMachine.SpeedDouble();
+        MiningMachine.SpeedFactor*=2;
     }
 }

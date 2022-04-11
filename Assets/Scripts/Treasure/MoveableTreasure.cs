@@ -9,6 +9,12 @@ public class MoveableTreasure : Treasure
 
     void Update()
     {
+        Move();
+    }
+
+    public void Move()
+    {
+        if (speed == 0) return;
         float x = transform.position.x;
         if (x < -limit)
         {
@@ -20,11 +26,12 @@ public class MoveableTreasure : Treasure
             right = false;
             transform.Rotate(new Vector3(0, 180, 0), Space.Self);
         }
-        if(right)
-            transform.Translate(Vector2.right * speed * Time.deltaTime,Space.World);
+        if (right)
+            transform.Translate(Vector2.right * speed * Time.deltaTime, Space.World);
         else
             transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
     }
+
     public override void OnGrab()
     {
         base.OnGrab();

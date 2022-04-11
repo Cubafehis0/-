@@ -33,7 +33,7 @@
         return id switch
         {
             PropID.Bomb => new BombProp(),
-            PropID.LuckGress => new LuckGressProp(),
+            PropID.LuckGress => new LuckGrassProp(),
             PropID.StrengthWater => new StrengthWaterProp(),
             PropID.GoodDiamond => new GoodDiamondProp(),
             PropID.StoneBook => new StoneBookProp(),

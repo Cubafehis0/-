@@ -24,36 +24,11 @@ public class PlayerDataMgr : MonoBehaviour,IManager
             OnScoreChanged?.Invoke(Score);
         }
     }
-    public void NewGame()
-    {
-        OnScoreChanged.RemoveAllListeners();
-        OnTurnEnd.RemoveAllListeners();
-        OnPropListChanged.RemoveAllListeners();
-        propsList = new Dictionary<PropID, int>()
-        {
-            {PropID.Bomb,10},
-            {PropID.GoodDiamond,0},
-            {PropID.LuckGress,0},
-            {PropID.StrengthWater,0},
-            {PropID.StoneBook,0},
-        };
-        PlayLV = 1;
-        score = 0;
-    }
-    public void NextTurn()
-    {
-        PlayLV++;
-    }
-
     [HideInInspector] public UnityEvent<int> OnScoreChanged;
-    [HideInInspector] public UnityEvent OnTurnEnd;
     #region 道具相关
     Dictionary<PropID, int> propsList = new Dictionary<PropID, int>();
     [HideInInspector] public UnityEvent OnPropListChanged;
-    public Dictionary<PropID, int> GetProps()
-    {
-        return propsList;
-    }
+    public Dictionary<PropID, int> GetProps()=>propsList;
     public bool ContainProp(PropID id)=> propsList[id] != 0;
     public void AddProps(PropID id)
     {
@@ -81,6 +56,27 @@ public class PlayerDataMgr : MonoBehaviour,IManager
         }
     }
     #endregion
+    public void Init()
+    {
+        OnScoreChanged.RemoveAllListeners();
+        OnTurnEnd.RemoveAllListeners();
+        OnPropListChanged.RemoveAllListeners();
+        propsList = new Dictionary<PropID, int>()
+        {
+            {PropID.Bomb,10},
+            {PropID.GoodDiamond,0},
+            {PropID.LuckGress,0},
+            {PropID.StrengthWater,0},
+            {PropID.StoneBook,0},
+        };
+        PlayLV = 1;
+        score = 0;
+    }
+    public void NextTurn()
+    {
+        PlayLV++;
+    }
+    [HideInInspector] public UnityEvent OnTurnEnd;
     public void TurnEnd()
     {
         OnTurnEnd?.Invoke();

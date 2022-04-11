@@ -2,12 +2,13 @@
 using UnityEngine;
 [System.Serializable]
 public class StringAudioClipDictionary : SerializableDictionary<string, AudioClip> { }
+[RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource audioSource;
+    AudioSource audioSource;
     public static SoundManager Instance;
     [SerializeField]
-    private StringAudioClipDictionary audioClips;
+    private StringAudioClipDictionary audioClips=new StringAudioClipDictionary();
     void Awake()
     {
         if (Instance != null)
@@ -15,6 +16,7 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        audioSource = GetComponent<AudioSource>();
         Instance = this;
         DontDestroyOnLoad(gameObject);
         RefreshSound();

@@ -7,9 +7,6 @@ public class TNTTreasure : Treasure
     [SerializeField] GameObject effect;
     [SerializeField] float explosionRadius;
     Animator animator;
-    private void Start()
-    {
-    }
     public override void OnGrab()
     {
         base.OnGrab();
@@ -35,7 +32,7 @@ public class TNTTreasure : Treasure
             }
         }
     }
-    private void SetTag(GameObject go,string tag)
+    public void SetTag(GameObject go,string tag)
     {
         go.tag = tag;
         Transform[] children=go.GetComponentsInChildren<Transform>();

@@ -1,14 +1,14 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.TestTools;
+using NUnit.Framework;
 
-public class StoneBookPropTest
+public class TreasureTest 
 {
+    Treasure treasure;
     GameObject go;
-    StoneBookProp prop;
     [UnitySetUp]
     public IEnumerator SetUp()
     {
@@ -17,45 +17,43 @@ public class StoneBookPropTest
         go.AddComponent<SoundManager>();
         go.AddComponent<MusicManager>();
         go.AddComponent<AudioListener>();
-        go.AddComponent<GameControl>();
         yield return new WaitForFixedUpdate();
-        prop = new StoneBookProp();
         player.Init();
     }
-
     [UnityTearDown]
     public IEnumerator TearDown()
     {
         GameObject.Destroy(go);
-        prop = null;    
+        GameObject.Destroy(treasure.gameObject);
         yield return null;
     }
     [Test]
-    public void StoneBookPropTestSimplePasses1()
+    public void MinGoldOnDragTest()
     {
-        Treasure treasure = TreasurePool.GetTreasure(TreasureID.MinStone).GetComponent<Treasure>();
+        treasure = TreasurePool.GetTreasure(TreasureID.MinGold).GetComponent<Treasure>();
         int score1 = PlayerDataMgr.Instance.Score;
-        prop.OnGrab(treasure);
+        treasure.OnDrag();
         int score2 = PlayerDataMgr.Instance.Score;
-        Assert.AreEqual(score1 + treasure.Score, score2);
+        UnityEngine.Assertions.Assert.AreEqual(score2, score1 + 100);
     }
 
     [Test]
-    public void StoneBookPropTestSimplePasses2()
+    public void MidGoldOnDragTest()
     {
-        Treasure treasure = TreasurePool.GetTreasure(TreasureID.BigStone).GetComponent<Treasure>();
+        treasure = TreasurePool.GetTreasure(TreasureID.MidGold).GetComponent<Treasure>();
         int score1 = PlayerDataMgr.Instance.Score;
-        prop.OnGrab(treasure);
+        treasure.OnDrag();
         int score2 = PlayerDataMgr.Instance.Score;
-        Assert.AreEqual(score1 + treasure.Score, score2);
+        UnityEngine.Assertions.Assert.AreEqual(score2, score1 + 250);
     }
+
     [Test]
-    public void StoneBookPropTestSimplePasses3()
+    public void BigGoldOnDragTest()
     {
-        Treasure treasure = TreasurePool.GetTreasure(TreasureID.Mouse).GetComponent<Treasure>();
+        treasure = TreasurePool.GetTreasure(TreasureID.BigGold).GetComponent<Treasure>();
         int score1 = PlayerDataMgr.Instance.Score;
-        prop.OnGrab(treasure);
+        treasure.OnDrag();
         int score2 = PlayerDataMgr.Instance.Score;
-        Assert.AreEqual(score1, score2);
+        UnityEngine.Assertions.Assert.AreEqual(score2, score1 + 500);
     }
 }

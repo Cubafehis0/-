@@ -14,22 +14,30 @@ public class Chest : Treasure
     public override void OnDrag()
     {
         int i = GetRandomIndex();
-        Debug.Log(i);
+        PlayAnimation(i);
+        GetRandomReward(i);
+        Destroy(gameObject, 4f);
+    }
+
+    private void PlayAnimation(int i)
+    {
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
         transform.parent = null;
         transform.position = endPos;
         transform.rotation = Quaternion.identity;
-        //transform.DOMove(endPos, 1.5f);
-        //transform.DORotateQuaternion(Quaternion.identity, 1.5f);
         sprite.DOFade(0, 2f)
                     .SetDelay(0f)
-                    .OnComplete(() => {
+                    .OnComplete(() =>
+                    {
                         if (i == 5) return;
                         SoundManager.Instance.PlayMusic("ChestOpen");
                         sprite.sprite = sprites[i];
                         sprite.DOFade(1, 1f);
-                        });
+                    });
+    }
 
+    public void GetRandomReward(int i)
+    {
         PlayerDataMgr player = PlayerDataMgr.Instance;
         switch (i)
         {
@@ -52,7 +60,6 @@ public class Chest : Treasure
                 player.UseProp(PropID.GoodDiamond);
                 break;
         }
-        Destroy(gameObject, 4f);
     }
     private int GetRandomIndex()
     {

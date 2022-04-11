@@ -1,14 +1,14 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class StoneBookPropTest
+public class GoodDiamondProTest
 {
     GameObject go;
-    StoneBookProp prop;
+    GoodDiamondProp prop;
     [UnitySetUp]
     public IEnumerator SetUp()
     {
@@ -19,7 +19,7 @@ public class StoneBookPropTest
         go.AddComponent<AudioListener>();
         go.AddComponent<GameControl>();
         yield return new WaitForFixedUpdate();
-        prop = new StoneBookProp();
+        prop = new GoodDiamondProp();
         player.Init();
     }
 
@@ -27,30 +27,21 @@ public class StoneBookPropTest
     public IEnumerator TearDown()
     {
         GameObject.Destroy(go);
-        prop = null;    
+        prop = null;
         yield return null;
-    }
-    [Test]
-    public void StoneBookPropTestSimplePasses1()
-    {
-        Treasure treasure = TreasurePool.GetTreasure(TreasureID.MinStone).GetComponent<Treasure>();
-        int score1 = PlayerDataMgr.Instance.Score;
-        prop.OnGrab(treasure);
-        int score2 = PlayerDataMgr.Instance.Score;
-        Assert.AreEqual(score1 + treasure.Score, score2);
     }
 
     [Test]
-    public void StoneBookPropTestSimplePasses2()
+    public void GoodDiamondPropTestSimplePasses1()
     {
-        Treasure treasure = TreasurePool.GetTreasure(TreasureID.BigStone).GetComponent<Treasure>();
+        Treasure treasure = TreasurePool.GetTreasure(TreasureID.Diamond).GetComponent<Treasure>();
         int score1 = PlayerDataMgr.Instance.Score;
         prop.OnGrab(treasure);
         int score2 = PlayerDataMgr.Instance.Score;
-        Assert.AreEqual(score1 + treasure.Score, score2);
+        Assert.AreEqual(score1 + treasure.Score*0.15, score2);
     }
     [Test]
-    public void StoneBookPropTestSimplePasses3()
+    public void GoodDiamondPropTestSimplePasses2()
     {
         Treasure treasure = TreasurePool.GetTreasure(TreasureID.Mouse).GetComponent<Treasure>();
         int score1 = PlayerDataMgr.Instance.Score;

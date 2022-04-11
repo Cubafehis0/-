@@ -9,14 +9,14 @@ public class GameControl : MonoBehaviour
     // Start is called before the first frame update
     public static GameControl Instance;
     private float leftTime;
-    public bool isGaming;
+    private bool isGaming;
+    public bool IsGaming { get => isGaming;  }
+
     [HideInInspector] public UnityEvent<int> OnTimeChanged;
     [HideInInspector] public UnityEvent OnTurnStart;
     [HideInInspector] public UnityEvent OnTurnEnd;
     [HideInInspector] public UnityEvent OnUpdate;
-    public LevelData LevelInfo{
-        get;set;
-    }
+    public LevelData LevelInfo{get;set;}
     public int LeftTime
     {
         get => Mathf.CeilToInt(leftTime);
@@ -25,9 +25,7 @@ public class GameControl : MonoBehaviour
             OnTimeChanged?.Invoke(LeftTime);
         }
     }
-    public int TargetScore{
-        get;set;
-    }
+    public int TargetScore{get;set;}
     public void Awake()
     {
         if (Instance != null)
@@ -74,7 +72,7 @@ public class GameControl : MonoBehaviour
     }
     void Update()
     {
-        if (isGaming)
+        if (IsGaming)
         {
             OnUpdate?.Invoke();
             leftTime -= Time.deltaTime;

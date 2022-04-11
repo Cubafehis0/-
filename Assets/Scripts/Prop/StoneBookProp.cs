@@ -12,11 +12,11 @@ public class StoneBookProp:IProp
     }
     public void Use(params object[] args)
     {
-        MiningMachine.OnDrag.AddListener(OnGrab);
+        MiningMachine.OnDrag2Hand.AddListener(OnGrab);
     }
     public void OnRemove(params object[] args)
     {
-        MiningMachine.OnDrag.RemoveListener(OnGrab);
+        MiningMachine.OnDrag2Hand.RemoveListener(OnGrab);
     }
     
     public void OnGrabTest1()

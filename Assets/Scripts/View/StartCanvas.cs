@@ -14,7 +14,7 @@ public class StartCanvas : BaseView
     public void Click2NewGame()
     {
         SoundManager.Instance.PlayMusic("BtnClick");
-        PlayerDataMgr.Instance.NewGame();
+        PlayerDataMgr.Instance.Init();
         SceneJump.Instance.Jump(SceneType.Game);
     }
     public void Click2MusicSetting()

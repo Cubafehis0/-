@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-
+[RequireComponent(typeof(AudioSource))]
 public class MusicManager : MonoBehaviour
 {
 
-    public AudioSource audioSource;
+    AudioSource audioSource;
 
     public static MusicManager Instance { get; private set; }
     [SerializeField]
@@ -18,6 +18,7 @@ public class MusicManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();  
         RefreshSound();
     }
     public void RefreshSound()

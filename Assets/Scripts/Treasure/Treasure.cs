@@ -32,7 +32,7 @@ public class Treasure : MonoBehaviour
     }
     public virtual void OnDrag()
     {
-        PlayerDataMgr.Instance.Score += score;
+        if(PlayerDataMgr.Instance) PlayerDataMgr.Instance.Score += score;
         Destroy(gameObject);
     }
 }

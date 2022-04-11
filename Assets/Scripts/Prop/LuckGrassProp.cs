@@ -1,4 +1,4 @@
-﻿public class LuckGressProp:IProp
+﻿public class LuckGrassProp:IProp
 {
     public void Use(params object[] args)
     {
